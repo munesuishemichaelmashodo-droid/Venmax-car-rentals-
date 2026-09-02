@@ -272,6 +272,16 @@ section { padding: 88px 0; }
 .stat-row b { font-family: var(--font-display); font-size: 30px; display: block; color: var(--gold); }
 .stat-row span { color: #a9b1c4; font-size: 13px; }
 
+/* ============= WHY CHOOSE ============= */
+.why-strip { background: var(--paper-dim); }
+.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line-dark); border-left: 1px solid var(--line-dark); }
+.why-item { border-right: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); padding: 30px 26px; }
+.why-item .mark { color: var(--red); font-weight: 800; font-size: 18px; margin-bottom: 10px; display: block; }
+.why-item h4 { font-size: 16px; color: var(--navy-ink); margin-bottom: 6px; }
+.why-item p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+@media (max-width: 900px) { .why-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } }
+
 /* ============= FAQ ============= */
 .faq-item { border-bottom: 1px solid var(--line-dark); padding: 20px 0; }
 .faq-q { display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; color: var(--navy-ink); font-size: 16px; }
